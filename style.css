@@ -1,0 +1,323 @@
+:root{
+    --purple:#2F192E;
+    --purple-light:#30192d;
+    --dark-blue:#012677;
+    --blue:#5c65c0;
+    --skyblue :#00b4fc;
+    --light-blue:#005bc5;
+    --dark-pink:#f64c57;
+    --dark-magenta:#e21b5a;
+    --light-green:#61e2c2;
+    --light-purple:#d9abff;
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    font-family: poppins,sans-serif;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6347; /* Change this color to your preferred hover color */
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-toggle i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-item {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .nav-menu.nav-menu-visible {
+        display: flex;
+    }
+}
+
+/* Container Styles */
+.container {
+    padding-top: 80px; /* To prevent content from being hidden under the navbar */
+}
+
+/* Profile Card Styles */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.profile-details .intro {
+    margin-bottom: 1rem;
+}
+
+.profile-details .intro h2 {
+    margin: 0.5rem 0;
+}
+
+.profile-details .intro h4 {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.profile-details .social a {
+    margin: 0 0.5rem;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.profile-details .social a:hover {
+    color: #ff6347;
+}
+
+.contact-info {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-info .row {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.contact-info .icon {
+    margin-right: 0.5rem;
+}
+
+.contact-info .content {
+    flex: 1;
+}
+
+.contact-info .content span {
+    display: block;
+    color: #555;
+}
+
+/* About Section Styles */
+.about {
+    padding: 2rem;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.about h1 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Skills Section Styles */
+.skills {
+    padding: 2rem;
+}
+
+.skills .skills-column {
+    margin-bottom: 1rem;
+}
+
+.skills .skills-box {
+    margin: auto;
+}
+
+.skills .progress {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.skills .progress h3 {
+    flex: 1;
+}
+
+.skills .bar {
+    flex: 2;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 1rem;
+    margin-left: 1rem;
+}
+
+.skills .bar span {
+    display: block;
+    height: 100%;
+    background: #ff6347;
+}
+
+/* Projects Section Styles */
+.projects {
+    padding: 2rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.projects .header {
+    margin-bottom: 1rem;
+}
+
+.projects .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.projects .box {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.projects .box h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.projects .box p {
+    margin-bottom: 1rem;
+}
+
+.projects .box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 2rem;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.contact h1 {
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact .input-box {
+    margin-bottom: 1rem;
+}
+
+.contact .input-box label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact .input-box input,
+.contact .input-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #ff6347;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Wangsabesari Rafaël</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Rafaël</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="home">
+        <div class="profile-card">
+            <div class="profile-pic">
+                <img src="img/WhatsApp Image 2024-07-21 at 23.17.04_1988e2d1.jpg" alt="user avatar">
+            </div>
+            <div class="profile-details">
+                <div class="intro">
+                    <h2>Wangsabesari Rafaël</h2>
+                    <h4>Natin ICT student</h4>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook" style="color:var(--blue)"></i></a>
+                        <a href="#"><i class="fab fa-linkedin" style="color:var(--light-blue)"></i></a>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="row">
+                        <div class="icon">
+                            <i class="fa fa-phone" style="color:var(--dark-magenta)"></i>
+                        </div>
+                        <div class="content">
+                            <span>Phone</span>
+                            <h5>+597 8131445</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="icon">
+                            <i class="fa fa-envelope-open" style="color:var(--light-green)"></i>
+                        </div>
+                        <div class="content">
+                            <span>Email</span>
+                            <h5>rafaelwangsabesari@gmail.com</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="icon">
+                            <i class="fa fa-map-marker" style="color:var(--light-purple)"></i>
+                        </div>
+                        <div class="content">
+                            <span>Location</span>
+                            <h5>Suriname</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about" id="about">
+            <h1>About Me</h1>
+            <p>Ik ben Wangsabesari Rafaël, ik ben 17 jaar oud. Zit op Natin ICT richting. Mijn hobbies zijn gamen en sporten. Ik wil in de toekomst een frontend developer worden.</p>
+
+            <h1>Programmeertalen</h1>
+            <div class="skills" id="skills">
+                <div class="skills-column">
+                    <h2 class="title">Coding skills</h2>
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>HTML <span>50%</span></h3>
+                                <div class="bar"><span style="width: 50%;"></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>CSS <span>40%</span></h3>
+                                <div class="bar"><span style="width: 40%;"></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Python <span>35%</span></h3>
+                                <div class="bar"><span style="width: 35%;"></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>JavaScript <span>20%</span></h3>
+                                <div class="bar"><span style="width: 20%;"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects" id="projects">
+            <h1 class="header"><span>Projects</span></h1>
+            <div class="projects-container">
+                <div class="box">
+                    <h1><span>Krimpen</span></h1>
+                    <p>Bij Krimpen moesten we een een kabels Krimpen en ze moesten werken. </p>
+                    <img src="img/Screenshot_2024-07-25-16-42-39-530_com.miui.gallery.jpg" alt="">
+                </div>
+                <div class="box">
+                    <h1><span>Burgerschap project</span></h1>
+                    <p>Bij dit project moesten we met bijde klassen dierentuin schoon maken.</p>
+                    <img src="img/WhatsApp Image 2024-07-22 at 00.27.00_e0256698.jpg" alt="">
+                </div>
+                <div class="box">
+                    <h1><span>Minikronieken</span></h1>
+                    <p>Voor Minikronieken moesten we een vidoe maken over een bekend persoon in Suriname.</p>
+                    <img src="img/json5-1024x1024.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <form id="contactForm">
+                <div class="input-box">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
